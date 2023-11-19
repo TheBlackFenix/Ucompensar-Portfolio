@@ -4,18 +4,16 @@ export interface UserData {
     primerApellido:  string;
     segundoApellido: string;
     edad:            number;
-    genero:          string;
-    fechaNacimiento: Date;
-    correo:          string;
-    telefono:        string;
-    profesion:       string;
-    estadoCivil:     string;
+    genero?:          string;
+    fechaNacimiento?: Date;
+    correo?:          string;
+    telefono?:        string;
+    profesion?:       string;
+    estadoCivil?:     string;
     estudios:        Estudio[];
     laboral:         Laboral[];
-    idiomas:         Idioma[];
+    idiomas?:         Idioma[];
     tecnologias:     Tecnologia[];
-    hobbies:         string[];
-    redesSociales:   RedesSociale[];
     aboutMe:         string[];
 }
 
@@ -33,14 +31,11 @@ export interface Idioma {
 export interface Laboral {
     empresa:     string;
     cargo:       string;
+    descripcion: string;
     fechaInicio: string;
     fechaFin:    string;
 }
 
-export interface RedesSociale {
-    nombre: string;
-    url:    string;
-}
 
 export interface Tecnologia {
 
