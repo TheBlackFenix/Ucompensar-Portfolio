@@ -1,0 +1,10 @@
+<h1 class="fs-1 fw-bolder text-center ">Estudios</h1>
+<div class="d-flex flex-column">
+    @for (est of userData.estudios; track $index) {
+        <div class="estudios">
+            <h2>{{est.titulo}}</h2>
+            <h3>Lugar: {{est.lugar}}</h3>
+            <p>Fecha: {{est.fecha}} </p>
+        </div>
+    }
+</div>

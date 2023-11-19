@@ -1,0 +1,19 @@
+<h1>
+    Hola, 
+    soy {{userData.primerNombre}} {{userData.primerApellido}}, 
+    desarrollador web.
+</h1>
+<h2>
+    Bienvenido a mi portafolio.
+</h2>
+<h2>
+    Aquí podrás encontrar información sobre mi y mis proyectos.
+</h2>
+<h3>
+    Acerca de mí
+</h3>
+@for (about of userData.aboutMe; track $index) {
+    <p>
+        {{about}}
+    </p>
+}

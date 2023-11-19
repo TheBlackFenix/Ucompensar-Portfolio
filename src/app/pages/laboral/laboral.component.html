@@ -1,0 +1,10 @@
+<h1 class="text-center fs-1 fw-bolder">Experiencia Laboral</h1>
+<div class="d-flex flex-column">
+    @for (exp of userData.laboral; track $index) {
+        <div class="experiencia">
+            <h2>{{exp.empresa}}</h2>
+            <h3>Cargo: {{exp.cargo}}</h3>
+            <p>Fecha Inicio - Fin: {{exp.fechaInicio}} - {{exp.fechaFin}}</p>
+        </div>    
+    }
+</div>
