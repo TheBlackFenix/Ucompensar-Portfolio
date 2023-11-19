@@ -17,16 +17,16 @@ ul{
     align-items: end;
 }
 li{
-    font-size: 20px;
+    font-size: 1rem;
     margin-right: 5vh;
     padding: 3vh;
 }
 li:hover{
     cursor: pointer;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .activeLink{
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #3f51b5;
 }
 .redes{
